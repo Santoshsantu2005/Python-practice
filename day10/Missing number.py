@@ -1,8 +1,7 @@
-str = input()
-word = str.split()
-longest = word[0]
-for i in word:
-    if len(i) > len(longest):
-        longest = i
+lst = list(map(int, input().split()))
 
-print(longest)
+n = len(lst) + 1
+
+for i in range(1, n + 1):
+    if i not in lst:
+        print(i)
